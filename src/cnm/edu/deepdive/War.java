@@ -6,6 +6,9 @@ import java.util.List;
 
 public class War {
 
+  public static final String DRAW_FORMAT = "P1: %s\tP2: %s\t";
+
+
   private boolean aceHigh;
   private boolean suicide;
   private List<Card> hand1;
@@ -49,7 +52,7 @@ public class War {
       Card card1 = hand1.remove(0);
       Card card2 = hand2.remove(0);
       int comparison = comp.compare(card1, card2);
-      System.out.printf("P1: %s\tP2: %s\t", card1, card2);
+      System.out.printf(DRAW_FORMAT, card1, card2);
       if (comparison > 0) {
         tally1 += 2;
         System.out.println("Player 1 wins 2 cards!");
