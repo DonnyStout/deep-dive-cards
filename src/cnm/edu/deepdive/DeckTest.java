@@ -8,6 +8,10 @@ public class DeckTest {
     for (Card card : deck.getCards()) {
       System.out.println(card);
     }
+    System.out.println("---Sorted---");
+    deck.sort();
+    for (Card card : deck.getCards()) {
+      System.out.println(card);
+    }
   }
-
 }

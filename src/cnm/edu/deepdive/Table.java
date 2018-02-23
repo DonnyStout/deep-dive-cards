@@ -12,7 +12,6 @@ public class Table {
     this.deck = deck;
     hands = new Card[NUMBER_OF_HANDS][CARDS_PER_HAND];
     deal();
-
   }
 
   public void deal() {
